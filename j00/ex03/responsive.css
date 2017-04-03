@@ -1,0 +1,87 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   responsive.css                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/04/03 22:43:33 by aridolfi          #+#    #+#             */
+/*   Updated: 2017/04/03 22:43:34 by aridolfi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+* {
+    margin: 0;
+}
+            
+body {
+    margin-top: 80px;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ps_neutral.png);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.22vw;
+    background-color: white;
+}
+
+.title {
+    margin-right: 16%;
+    margin-left: 16%;
+    border: groove;
+}
+
+.table {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+.cell {
+    width: 5%;
+    height: 5%;
+    font-family: sans-serif;
+    border: solid 1px #000;
+}
+
+.weight {
+    text-align: right;
+    font-size: 0.7vw;
+}
+
+h2 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.Z {
+    text-align: left;
+    font-size: 1vw;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1vw;
+}
+
+.zwidth {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.lanthanoids {
+    background-color: #f4c2a7;
+}
+
+.actinoids {
+    background-color: #e78b5c;
+}
