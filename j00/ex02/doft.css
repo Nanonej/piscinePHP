@@ -6,40 +6,117 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 14:49:23 by aridolfi          #+#    #+#             */
-/*   Updated: 2017/04/03 16:13:23 by aridolfi         ###   ########.fr       */
+/*   Updated: 2017/04/03 18:38:57 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 body {
     background-color: #505050;
+    margin: 0;
+    padding: 0;
 }
 
  .top_block {
      background-color: #909090;
      border-radius: 15px;
-	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
-	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
-	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+     -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+     -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+     box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+     width: 80%;
+     height: 140px;
+     margin: auto;
+     margin-top: 20px;
+}
+
+.img-title {
+    height: 90%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.img-reload {
+    height: 15%;
+    float: right;
+    margin: 10px;
+}
+
+.img-close {
+    height: 15%;
+    clear: right;
+    float: right;
+    margin-right: 1%;
+    margin-top: 67.5px;
+}
+
+.img-loupe {
+    float: right;
+    height: 110%;
+    margin-top: -30px;
 }
 
 .container {
-    
+    margin: auto;
+    margin-top: 20px;
+    width: 76%;
 }
 
 .left_block {
     background-color: #909090;
-     border-radius: 15px;
-   -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
-   -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
-   box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	border-radius: 15px;
+	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+    width: 140px;
+    height: 425px;
+    float: left;
+    clear: both;
+}
+
+.img-left {
+    float: left;
+    width: 50%;
+    height: 16%;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.img-selected {
+    border: 5px solid red;
+    margin-left: 22%;
 }
 
 .midle_block {
+    position: relative;
     background-color: #909090;
-     border-radius: 15px;
-   -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
-   -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
-   box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	border-radius: 15px;
+	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+    width: 64.99%;
+    float: left;
+    margin: 0px 30px;
+}
+
+.img-cluster {
+    margin: 1% 1% 1% 1%;
+    width: 98%;
+}
+
+.ikea a{
+    position: absolute;
+    width: 13.7%;
+    height: 37.7%;
+    top: 56.67%;
+    left: 32.8%;
+}
+
+.apple a{
+    position: absolute;
+    width: 18.6%;
+    height: 29.1%;
+    top: 54.9%;
+    left: 78.2%;
 }
 
 .right_block {
@@ -48,12 +125,67 @@ body {
 	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
 	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+    width: 140px;
+    height: 425px;
+    float: left;
+}
+
+.img_right {
+    float: left;
+    width: 50%;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.brick-repeat {
+    float: left;
+    width: 120px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-image: url("./resources/brick.jpg");
 }
 
 .chat {
+    position: relative;
     background-color: #88ff89;
      border-radius: 15px;
 	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
 	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+    float: left;
+    width: 520px;
+    height: 170px;
+    margin-left: 8.1%;
+    margin-top: -75px;
+}
+
+p {
+    letter-spacing: 0.05vw;
+    font-family: sans-serif;
+    font-size: 0.9vw;
+    margin: 10px;
+    margin-bottom: 1px;
+}
+
+strong {
+    font-family: serif;
+    font-weight: normal;
+    font-size: 1.6vw;
+}
+
+em {
+    font-family: sans-serif;
+    font-size: 1vw;
+    margin-bottom: 0px;
+}
+
+.input_box {
+    line-height: 4px;
+    margin-left: 15px;
+    margin-right: 0.3vw;
+}
+
+#shdw_txt {
+    text-shadow: 5px 5px 3px #BA8047, 5px 2px 3px #BA8047;
 }
