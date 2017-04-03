@@ -6,6 +6,54 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 14:49:23 by aridolfi          #+#    #+#             */
-/*   Updated: 2017/04/01 14:50:21 by aridolfi         ###   ########.fr       */
+/*   Updated: 2017/04/03 16:13:23 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+body {
+    background-color: #505050;
+}
+
+ .top_block {
+     background-color: #909090;
+     border-radius: 15px;
+	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+}
+
+.container {
+    
+}
+
+.left_block {
+    background-color: #909090;
+     border-radius: 15px;
+   -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+   -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+   box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+}
+
+.midle_block {
+    background-color: #909090;
+     border-radius: 15px;
+   -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+   -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+   box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+}
+
+.right_block {
+    background-color: #909090;
+     border-radius: 15px;
+	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+}
+
+.chat {
+    background-color: #88ff89;
+     border-radius: 15px;
+	-webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+	box-shadow: 15px 15px 15px 0px rgba(0,0,0,1);
+}
