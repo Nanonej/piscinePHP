@@ -1,0 +1,72 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   menu.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/04/03 23:11:54 by aridolfi          #+#    #+#             */
+/*   Updated: 2017/04/04 10:56:59 by aridolfi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+html, body {
+    min-width: 1200px;
+}
+
+body {
+    background-image: url(http://i.imgur.com/4s01o2C.png);
+    font-family: sans-serif;
+}
+
+#menus a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#menus > li {
+    width: 18.4%;
+}
+
+#menus > li, #menus > li li {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    padding-top: 9px;
+    padding-left: 15px;
+    background-color: #277EB6;
+}
+
+#menus > li li {
+    background: none transparent;
+    width: 93%;
+}
+
+#menus > li li a {
+    color: #277EB6;
+}
+
+#menus > li li:hover {
+    background: #EFEFEF;
+}
+
+#menus > li:hover {
+    background: #777;
+}
+
+#menus ul {
+    position: absolute;
+    top: 2.75em;
+    left: 0;
+    max-height: 0vw;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    overflow: hidden;
+    transition: 1s max-height 0.3s;
+}
+
+#menus > li:hover ul {
+    max-height: 13em;
+}
