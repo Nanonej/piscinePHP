@@ -6,9 +6,11 @@ function	get_keys($tab)
 	$dict = array();
 	foreach ($tab as $elem)
 	{
+		print_r($dict);
 		$tmp = explode(":", $elem);
-		$dict = array_merge($dict, array($tmp[0] => $tmp[1]));
+		$dict = array_merge($dict, array(strval($tmp[0]) => strval($tmp[1])));
 	}
+	print_r($dict);
 	return ($dict);
 }
 if ($argv > 2)
