@@ -3,7 +3,7 @@
 
 function	check_error($arg1, $op, $arg2)
 {
-	if (!is_null($arg1) || !is_null($arg2))
+	if (is_null($arg1) || is_null($arg2))
 		return (0);
 	if (!ereg("[+%/*-]", $op))
 		return (0);
