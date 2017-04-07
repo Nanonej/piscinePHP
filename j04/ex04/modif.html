@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Modifier son mot de passe</title>
+	</head>
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+	</style>
+	<body>
+		<p>Modifiez votre mot de passe :</p>
+		<form action="modif.php" method="post">
+			<label for="login">Identifiant : </label>
+
+			 <input type="text" name="login" id="login" placeholder="login" value="" />
+			<br />
+
+			<label for="oldpw">Ancien mot de passe : </label>
+			<input type="password" name="oldpw" id="oldpw" placeholder="old password" value="" />
+		   <br />
+
+		   <label for="newpw">Nouveau mot de passe : </label>
+		   <input type="password" name="newpw" id="newpw" placeholder="new password" value="" />
+
+			<input type="submit" name="submit" value="OK" />
+		</form>
+		<br />
+		<a href="./index.html">Retourner sur la page de connection</a>
+	</body>
+</html>
