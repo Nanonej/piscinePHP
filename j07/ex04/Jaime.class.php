@@ -4,9 +4,9 @@ class Jaime extends Lannister
 {
 	public function sleepWith($x)
 	{
-		if (get_parent_class(get_class($x)) == "Lannister")
+		if ($x instanceof Lannister)
 		{
-			if (get_class($x) == "Tyrion")
+			if ($x instanceof Tyrion)
 				print("Not even if I'm drunk !" . PHP_EOL);
 			else
 				print("With pleasure, but only in a tower in Winterfell, then." . PHP_EOL);
