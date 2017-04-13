@@ -1,6 +1,6 @@
 <?php
 
-class Fighter
+abstract class Fighter
 {
 	public $name = "";
 
@@ -8,6 +8,8 @@ class Fighter
 	{
 		$this->name = $string;
 	}
+
+	abstract public function fight($target);
 }
 
 ?>
