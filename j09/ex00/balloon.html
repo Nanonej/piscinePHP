@@ -1,0 +1,75 @@
+<!--
+                                                          :::      ::::::::
+     balloon.html                                       :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2017/04/14 19:05:01 by aridolfi          #+#    #+#
+     Updated: 2017/04/14 19:05:06 by aridolfi         ###   ########.fr
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Come blow this balloon</title>
+		<style media="screen">
+			#balloon {
+                width: 200px;
+                height: 200px;
+				background: red;
+                border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="balloon"></div>
+		<script type="text/javascript">
+			var balloon = document.getElementById('balloon');
+            var bwidth = 200;
+            var bheight = 200;
+            var bcolor = 'red';
+            var unit = 'px';
+
+			var togglecolor = function(color)
+			{
+				if (color === 'red')
+					return ('green');
+				if (color === 'green')
+					return ('blue');
+				if (color === 'blue')
+					return ('red');
+			}
+
+			var revcolor = function(color)
+			{
+				if (color === 'red')
+					return ('blue');
+				if (color === 'blue')
+					return ('green');
+				if (color === 'green')
+					return ('red');
+			}
+
+			balloon.addEventListener('click', function(e)
+			{
+				bwidth = (bwidth > 410 ? 200 : bwidth + 10);
+				bheight = (bheight > 410 ? 200 : bheight + 10);
+				bcolor = togglecolor(bcolor);
+				e.target.style.width = bwidth + unit;
+				e.target.style.height = bheight + unit;
+				e.target.style.backgroundColor = bcolor;
+			});
+
+			balloon.addEventListener('mouseout', function(e)
+			{
+				bwidth = (bwidth <= 200 ? 200 : bwidth - 5);
+				bheight = (bheight <= 200 ? 200 : bheight - 5);
+				bcolor = revcolor(bcolor);
+				e.target.style.width = bwidth + unit;
+				e.target.style.height = bheight + unit;
+				e.target.style.backgroundColor = bcolor;
+			});
+		</script>
+	</body>
+</html>
